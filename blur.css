@@ -1,0 +1,9 @@
+/* Initial body */
+body {
+  transition: all 0.5s ease;
+}
+
+/* Blur effect */
+.blur {
+  filter: blur(5px);
+}
