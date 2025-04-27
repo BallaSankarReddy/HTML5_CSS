@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Angular Example Page</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .quote-form, .sidebar {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .submit-btn {
+      background-color: #e295cb;
+      border: none;
+    }
+    .submit-btn:hover {
+      background-color: #d17ab8;
+    }
+    .sidebar a {
+      text-decoration: none;
+      color: #d17ab8;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .sidebar-title {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    /* Make header look clickable */
+    h2[data-bs-toggle="modal"] {
+      cursor: pointer;
+      color: #007bff;
+    }
+    h2[data-bs-toggle="modal"]:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="#">SECL Group</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#pageModal"  data-bs-toggle="modal" data-bs-target="#pageModal">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Solutions</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Industries</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Cases</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container py-5">
+  <div class="row g-5">
+    <!-- Left Form -->
+    <div class="col-md-4">
+      <div class="quote-form">
+        <h5 class="mb-4">Get a Quote</h5>
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Name">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Email">
+          </div>
+          <div class="mb-3">
+            <input type="tel" class="form-control" placeholder="Phone">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+          </div>
+          <button type="submit" class="btn submit-btn w-100">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Middle Content -->
+    <div class="col-md-5">
+      <!-- Here is the clickable H2 that triggers Modal -->
+      <h2 >
+        10 Best Examples of Websites and Apps Built with Angular
+      </h2>
+      <ul class="list-unstyled mt-4">
+        <li><a href="#">What is Angular?</a></li>
+        <li><a href="#">10 Popular Websites made with Angular</a></li>
+        <li><a href="#">What Are The Advantages of Angular?</a></li>
+        <li><a href="#">When To Choose Angular For Your Project?</a></li>
+        <li><a href="#">Conclusion</a></li>
+      </ul>
+      <p class="mt-4">
+        Angular is a powerful web framework created and promoted by Google, making it one of the best choices for building modern web apps...
+      </p>
+    </div>
+
+    <!-- Right Sidebar -->
+    <div class="col-md-3">
+      <div class="sidebar">
+        <div class="sidebar-title">Relevant to:</div>
+        <a href="#">Dedicated Development Team</a>
+        <a href="#">Back-End Development</a>
+        <a href="#">JavaScript Development</a>
+        <a href="#">Angular Development</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="pageModal" tabindex="-1" aria-labelledby="pageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="pageModalLabel">Page Content</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 500px;">
+        <!-- Load external page inside iframe -->
+        <iframe src="service1.html" width="100%" height="100%" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
