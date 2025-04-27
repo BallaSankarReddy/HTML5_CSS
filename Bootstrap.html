@@ -12,7 +12,7 @@
     body {
       background-color: #f8f9fa;
     }
-    .quote-form {
+    .quote-form, .sidebar {
       background: white;
       padding: 20px;
       border-radius: 8px;
@@ -25,12 +25,6 @@
     .submit-btn:hover {
       background-color: #d17ab8;
     }
-    .sidebar {
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
     .sidebar a {
       text-decoration: none;
       color: #d17ab8;
@@ -42,8 +36,17 @@
       font-weight: bold;
       margin-bottom: 20px;
     }
+    /* Make header look clickable */
+    h2[data-bs-toggle="modal"] {
+      cursor: pointer;
+      color: #007bff;
+    }
+    h2[data-bs-toggle="modal"]:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
+
 <body>
 
 <!-- Navbar -->
@@ -55,7 +58,20 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <li>
+                <a class="dropdown-item" href="#pageModal" data-bs-toggle="modal" data-bs-target="#pageModal">
+                    Technology Service
+                </a>
+              </li>
+              <li><a class="dropdown-item" href="#">Service 2</a></li>
+              <li><a class="dropdown-item" href="#">Service 3</a></li>
+            </ul>
+          </li>
         <li class="nav-item"><a class="nav-link" href="#">Solutions</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Industries</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Cases</a></li>
@@ -93,8 +109,11 @@
 
     <!-- Middle Content -->
     <div class="col-md-5">
-      <h2>10 Best Examples of Websites and Apps Built with Angular</h2>
-      <ul class="list-unstyled">
+      <!-- Here is the clickable H2 that triggers Modal -->
+      <h2 >
+        10 Best Examples of Websites and Apps Built with Angular
+      </h2>
+      <ul class="list-unstyled mt-4">
         <li><a href="#">What is Angular?</a></li>
         <li><a href="#">10 Popular Websites made with Angular</a></li>
         <li><a href="#">What Are The Advantages of Angular?</a></li>
@@ -119,7 +138,24 @@
   </div>
 </div>
 
+<!-- Modal -->
+<div class="modal fade" id="pageModal" tabindex="-1" aria-labelledby="pageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 500px;">
+        <!-- Load external page inside iframe -->
+        <iframe src="service1.html" width="100%" height="100%" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
