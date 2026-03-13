@@ -1,1 +1,129 @@
 
+
+
+1)    Introduction
+2)    About Previous Project
+3)    Java 8 Features
+4)    Steam API – how can we filter the list whose age is greater than 50.
+5)    What is the use of default keyword and how we can us that in real time. Why cant we use Abstract class instead of interface with default method.
+6)    OOPS
+7)    What is Abstraction and real time example
+8)    How to implement singleton class in java
+9)    Explain the flow of Spring MVC
+10)    How Spring Boot Project works
+11)    Spring Security
+12)    Junit
+13)    Collection API
+14)    How Hashmap works internally
+15)    How Hashset works internally
+16)    What is difference between hashmap and hashset in java
+17)    Database frameworks
+18)    Multithreading
+19)    Difference between wait and sleep
+20)    From which class we are calling wait  method
+21)    SQL
+22)    Difference between Stored Procedure and Function
+ 
+23)    Difference between HashMap and ConcurrentHashMap. Which one is efficient in performance wise.
+24)    Give me the real time example for abstract design pattern and factory pattern and which one is preferred .
+25)    What will happen system.exit given in finally block
+26)    What is the purpose of String pool. How its managed by JVM
+27)    How to create immutable class.
+28)    When we should use the private constructor
+29)    What circular dependency exception. How to avoid circular dependency exception.  
+30)    What is lambda expression
+31)    Will able to throw exception inside lambda expression
+32)    What are all the inbuilt function we have in functional interface 
+33)    What is composition
+34)    What is inversion of control.
+35)    Why we need @Autowired instead of new operator.
+36)    How spring is differ from spring boot.
+37)    What are scope we have in spring
+38)    I need only 2 beans for my application how should I achieve 
+39)    Use of AOP Pattern
+40)    Restful API is stateful or stateless?
+41)    HTTP method and HTTP status code.
+42)    Difference between stored procedure and function
+43)    How to get second highest salary from the table
+44)    Join Query experience.
+ 
+ 
+
+*****Coding Test, Java 8 and Core Java:
+ 
+1) String str = "thisisjustasampledata";
+t:3
+s:4
+a:4... Print frequency of each character using Java 8 Streams
+2) List<Employee> list = new ArrayList<Employee>();
+     list.add(e1);
+              list.add(e2);
+              list.add(e3);
+              list.add(e4);
+              list.add(e5);
+ 
+display employees whose age is <= 30 using streams API
+display average salary of all employees using streams API
+display employees whose name starts with "R"
+3) what are intermediate and terminal operations and give examples.
+4) what is the purpose of introducing DEFAULT methods in Java 8 and give examples of default methods available in Java 8 API
+5) difference between Runnable and Callable and which one to prefer.
+6) difference between extending Exception and RuntimeException class while defining custom exceptions
+7) what are the ways to prevent thread execution
+8) what is GC and what are the ways to make an object eligibe for GC?
+9) few questions on Strings and SCP concept
+10) what are the rules for creating your own immutable class
+11) use comparator to sort a list of employee objects in descending order of their age
+12) String[] cities = {"HYD", "CHE", "BAN", "MUM"};
+List<String> list = cities.asList();
+list.add("PUNE");sop(list); // output of the code snippet and explain how it works
+13) fail safe vs fail fast collections and examples
+14) rules for overriding and over loading
+15) what is hash collision
+16) contract b/w hashcode and equals
+17) given a list of integer values and print them in descending order
+ 
+
+****REST API:
+1) Explain End-to-End flow of designing a REST API
+2) how do you perform validations in REST API
+3) how do you handle exceptions in REST API
+4) explain how authentication is done while accessing REST API
+5) what are idempotency and give examples for idempotent and non-idempotent methods
+6) difference between PUT and PATCH methods
+7) what are different status codes and how do you return them to consumer
+ 
+*****Spring Boot:
+1) what is auto-configuration and how is it different from component scan
+2) difference between @Configuration and @Component
+3) what is AOP and give an example
+4) what are actuators and specify some endpoints
+5) how do you handle exceptions in Spring Boot
+6) how do you read property values from application.properties file
+7) what is JPQL and few examples to write JPQL queries for some scenarios
+8) what is the difference between CrudRepository and JpaRepository
+9) how to connect to 2 different databases in Spring Boot
+ 
+ 
+1. Default size of ArrayList ?
+2. Internal working of Hashmap
+3. Method Overriding - can we override static method ?
+4. Method Overriding - Exceptions in Parent class and child class methods
+5. Java 8 - Optional ? and coding question on optional
+6. Java 8 - Stream API - Coding questions
+7. Diff between Stream and Parallel Stream
+8. Multithreading - synchronization
+9. Concurrent collections
+10. Diff between Hashmap and Concurrent Hashmap
+ 
+ 
+ What are the features introduced in Java 8?
+Given a List, how can you find the highest number using the Stream API?
+How can you find the second-highest salary using an SQL query?
+Explain the internal working of a HashMap.
+What are the key features introduced in Java 17 and Java 21?
+What is Docker?
+What is the deployment process of your project?
+How do you handle exceptions in your project?
+Explain the execution flow of a Spring Boot application.
+How do you write a custom query in your Spring Boot project?
